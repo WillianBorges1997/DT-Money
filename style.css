@@ -1,0 +1,423 @@
+/*importação google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    /* configurações padrão*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { /* corpo do site */
+    background-color: #202024;
+    padding: 37%; /* aumento da largura rodapé*/
+   
+
+}
+header{    /* cabeçalho da página */
+   
+    position: absolute; /*posiciona todos no canto superior esquerdo da página*/
+    height: 212px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #121214;
+   
+}
+
+button{ /*botão nova transação*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 152px;
+    height: 50px;
+    background: #00875F;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    
+        
+}
+
+.cabecalho{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 787px;
+    position: absolute;
+    width: 1119.8px;
+    height: 50px;
+    left: calc(50% - 1119.8px/2 - 0.1px);
+    top: 40px;
+    position: absolute;
+    background-color: #121214;
+}
+
+.boxes-vertical{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    width: 1120px;
+    height: 137px;
+    left: calc(50% - 1120px/2);
+    top: 130px;
+    
+}
+.display1{ /*primeiro display*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 24px 32px;
+    gap: 12px;
+    width: 352px;
+    height: 137px;
+    background: #323238;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+.display2{ /*segundp display*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 24px 32px;
+    gap: 12px;
+    width: 352px;
+    height: 137px;
+    background: #323238;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+
+
+.display3{ /*terceiro display de cor verde*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 24px 32px;
+    gap: 12px;
+    width: 352px;
+    height: 137px;
+    background: #015F43;
+    border-radius: 6px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+
+
+h3{ /*letreiro de valores de entrada, saida e total*/
+    
+width: 296px;
+height: 45px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 140%;
+color: #E1E1E6;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+
+input{  /* referente a caixa "Busque uma transação*/
+    
+    /*letras dentro da caixa*/
+
+    width: 925px;
+    height: 22px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #7C7C8A;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    /*caixa*/
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 1120px;
+    height: 54px;
+    left: calc(50% - 1120px/2);
+    top: 331px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 957px;
+    height: 54px;
+    background: #121214;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    
+}
+
+.bus-car{ /*botão "Buscar"*/
+
+        /*configuração da palavra "Buscar"*/
+    width: 51px;
+    height: 26px;
+    background-color:#29292e ;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: center ; /*alinha o "BUSCAR" no centro*/
+    color: #00B37E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+         /*configurações da parte de fora do "buscar"*/
+    
+box-sizing: border-box;
+Width: Hug (147px);
+Height: Hug (54px);
+Left: 72%; 
+border-radius:6px;
+Padding:14px, 32px, 14px, 32px;
+Gap:12px;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+gap: 12px;
+
+width: 147px;
+height: 54px;
+border: 1px solid #00B37E;
+border-radius: 6px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+
+}
+
+    .painel{ /*painel geral com as linhas demostrativas de saldos*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 1120px;
+        height: 732px;
+        left: calc(50% - 1120px/2);
+        top: 409px;
+
+    }
+
+    .linha1{ /*painel 1*/
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 32px;
+        gap: 8px;
+        width: 1120px;
+        height: 66px;
+        background: #29292E;
+        border-radius: 5px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+}
+.linha2{ /*painel 2*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.linha3{ /*painel 3*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.linha4{ /*painel 4*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+}
+    .linha5{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 5;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .linha6{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .linha7{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 7;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .linha8{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 8;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .linha9{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 8px;
+    width: 1120px;
+    height: 66px;
+    background: #29292E;
+    border-radius: 5px;
+    flex: none;
+    order: 9;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .linha10{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 32px;
+        gap: 8px;
+        width: 1120px;
+        height: 66px;
+        background: #29292E;
+        border-radius: 5px;
+        flex: none;
+        order: 10;
+        align-self: stretch;
+        flex-grow: 0;
+    
+    }
+    footer{ /*rodapé*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        position: absolute;
+        width: 216px;
+        height: 40px;
+        left: calc(50% - 216px/2);
+        top: 1181px;
+    }
+   
+  
+    
