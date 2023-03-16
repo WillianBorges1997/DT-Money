@@ -6,6 +6,7 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 
@@ -15,18 +16,19 @@ body { /* corpo do site */
    
 
 }
-header{    /* cabeçalho da página */
-   
-    position: absolute; /*posiciona todos no canto superior esquerdo da página*/
+    header{
+    background: #121214;
+    position: absolute;
     height: 212px;
     left: 0px;
     right: 0px;
     top: 0px;
-    background: #121214;
+
    
 }
 
-button{ /*botão nova transação*/
+.nv-transacao{ /*botão nova transação*/
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,8 +93,38 @@ button{ /*botão nova transação*/
     order: 0;
     flex-grow: 0;
     
+    
 }
-.display2{ /*segundp display*/
+
+.entrada{ /*configuração do letreiro "entrada"*/
+
+    
+width: 63px;
+height: 26px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #C4C4CC;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.setagreen{ /*posição da seta verde"*/
+
+position: absolute;
+left: 26%;
+right: 9.38%;
+top: 15%;
+bottom: 9.38%;
+
+}
+
+.display2{ /*segundo display*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -105,6 +137,30 @@ button{ /*botão nova transação*/
     flex: none;
     order: 1;
     flex-grow: 0;
+
+}
+
+.saida{ /*configuração do letreiro "saida"*/
+    
+width: 49px;
+height: 26px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #C4C4CC;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.setared{ /*posição da seta "saida"*/
+position: absolute;
+left: 60%;
+right: 46.87%;
+top: 15%;
+bottom: 31.25%;
 
 }
 
@@ -124,6 +180,31 @@ button{ /*botão nova transação*/
     order: 2;
     flex-grow: 0;
 
+}
+
+.valor{ /*configuração do letreiro "total"*/
+    width: 36px;
+height: 26px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #C4C4CC;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+.sifao{/*posição da imagem "sifao"*/
+    position: absolute;
+    left: 95%;
+    right: 21.88%;
+    top: 15.62%;
+    bottom: 15.62%;
+    
 }
 
 
@@ -189,9 +270,10 @@ input{  /* referente a caixa "Busque uma transação*/
     
 }
 
-.bus-car{ /*botão "Buscar"*/
 
-        /*configuração da palavra "Buscar"*/
+.bus-car{/*botão "Buscar"*/
+
+    /*configuração da palavra "Buscar"*/
     width: 51px;
     height: 26px;
     background-color:#29292e ;
@@ -208,39 +290,33 @@ input{  /* referente a caixa "Busque uma transação*/
     order: 1;
     flex-grow: 0;
 
-         /*configurações da parte de fora do "buscar"*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*palavra buscar ficam centralizadas ao meio*/
+    align-items: center;
+    padding: 14px 32px;
+    gap: 12px;
+
+    width: 147px;
+    height: 54px;
+
+    border: 1px solid #00B37E;
+    border-radius: 6px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 60.7em;
+
     
-box-sizing: border-box;
-Width: Hug (147px);
-Height: Hug (54px);
-Left: 72%; 
-border-radius:6px;
-Padding:14px, 32px, 14px, 32px;
-Gap:12px;
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 14px 32px;
-gap: 12px;
-
-width: 147px;
-height: 54px;
-border: 1px solid #00B37E;
-border-radius: 6px;
-
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-
 }
 
-    .painel{ /*painel geral com as linhas demostrativas de saldos*/
+
+    .painel{ /*linhas do input*/
+        
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /*os inputs ficam em coluna*/
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
@@ -250,9 +326,19 @@ flex-grow: 0;
         left: calc(50% - 1120px/2);
         top: 409px;
 
+        /*configuração das descrições dentro do input*/
+        color: #C4C4CC;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        Width: Fill (500px);
+
     }
 
     .linha1{ /*painel 1*/
+
 
         display: flex;
         flex-direction: row;
@@ -268,6 +354,8 @@ flex-grow: 0;
         align-self: stretch;
         flex-grow: 0;
 }
+
+
 .linha2{ /*painel 2*/
     display: flex;
     flex-direction: row;
@@ -404,7 +492,92 @@ flex-grow: 0;
         flex-grow: 0;
     
     }
-    footer{ /*rodapé*/
+
+
+    
+
+    .escrita-coluna1  { /*escritas da primeira coluna lado esquerdo*/
+        width: 500px;
+        height: 26px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #C4C4CC;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+    }
+
+    .escrita-coluna2-green{ /*primeira coluna (letras)*/
+        width: 200px;
+        height: 26px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #00B37E;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .escrita-coluna2-red{ /*segunda coluna (letras)*/
+        width: 200px;
+        height: 26px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+
+        color: #F75A68;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    .escrita-coluna3{ /*terceira coluna (letras)*/
+        width: 240px;
+        height: 26px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #C4C4CC;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .escrita-coluna4{ /*quarta coluna (letras)*/
+
+        width: 240px;
+        height: 26px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #C4C4CC;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+  
+    /*RODAPÉ*/
+
+    footer{ /*posição dos 3 botões no rodapé*/
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -417,7 +590,62 @@ flex-grow: 0;
         height: 40px;
         left: calc(50% - 216px/2);
         top: 1181px;
+
     }
-   
-  
+
+    .botao-seta-esquerda{ /*botões de navegação das páginas no rodapé*/
+        background-color: #202024;
+        border:none;
+        
+    }
     
+    .botao-pag1{
+        background-color: #202024;
+        border:none;
+        width: 40px;
+        height: 40px;
+        background: #015F43;
+        border-radius: 6px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        color: #E1E1E6;
+        
+    }
+    .botao-pag2{
+        background-color: #202024;
+        border:none;
+        
+        width: 40px;
+        height: 40px;
+        background: #323238;
+        border-radius: 6px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        color: #E1E1E6;
+       
+
+    }
+    .botao-pag3{
+        
+        background-color: #202024;
+        border:none;
+        
+        width: 40px;
+        height: 40px;
+        background: #323238;
+        border-radius: 6px;
+        flex: none;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        color: #E1E1E6;
+
+    }
+    .botao-seta-direita{
+        background-color: #202024;
+        border:none;
+        order: 5;
+    }
+

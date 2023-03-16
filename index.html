@@ -7,6 +7,7 @@
     <title>DT Money</title> <!--nome na aba-->
     <link rel="stylesheet" href="style.css"> <!--importação do css-->
     <link rel="shortcut icon" href="Imagens/cabecalho/seta_simbolo.png" type="image/x-icon"> <!--favicon-->
+    <link rel="stylesheet" href="Imagens/cabecalho/seta_simbolo.png">
 </head>
 
 <body> <!--corpo-->
@@ -15,57 +16,127 @@
         
         <div class="cabecalho"> <!--logo + botão (nova transação)-->
             <img src="Imagens/cabecalho/logo_dtmoney.png" alt="Logo"> <!--imagem da logo-->
-                <button>Nova transação</button> <!--botão ao lado da logo-->
+                <button class="nv-transacao">Nova transação</button> <!--botão ao lado da logo-->
                 
        </div>
-       <main>
 
        <div class="boxes-vertical"> <!--3 caixas display resultados numéricos-->
+
          <div class="display1"> <!--primeiro display-->
-           <div class="setagreen"><img src="Imagens/displays/img_entrada.png" alt="setacima"></div> 
+            <div class="entrada">Entrada</div>
+           <div class="setagreen"> <img src="Imagens/displays/seta_green.png" alt="seta cima"></div> 
             <h3>R$ 17.400,00</h3>
          </div>
          <!--segundo display-->
         <div class="display2">
-           <div class="setared"><img src="Imagens/displays/img_saida.png" alt="Seta baixo"></div>
+            <div class="saida">Saída</div>
+           <div class="setared"><img src="Imagens/displays/seta_red.png" alt="Seta baixo"></div>
             <h3>R$ 1.259,00</h3>
         </div>
         <!--terceiro display-->
-        <div class="display3">
-            <div class="sifao"><img src="Imagens/displays/img_total.png" alt="sifao">
+        <div class="display3"> 
+            <div class="valor">Valor</div>
+            <div class="sifao"><img src="Imagens/displays/sifao.png" alt="sifao"></div>
              <h3>R$ 16.141,00</h3>
         </div>
     </header>
-         
+
+         <div>
         <input type="text" placeholder="Busque uma transação">
-        
+
+        <div class="botao-verde"> <!--botão "BUSCAR"-->
         <input type="button" value="Buscar" class="bus-car">
+    </div>
+        
+       
+
+     </div>
+
         
         <div>
+            
         <div class="painel"> 
-        <div class="linha1"></div>
-            <div class="linha2"></div>
-                    <div class="linha3"></div>
-                        <div class="linha4"></div>
-                        <div class="linha5"></div>
-                    <div class="linha6"></div>
-                <div class="linha7"></div>
-            <div class="linha8"></div>
-        <div class="linha9"></div>
-    <div class="linha10"></div>
+        <div class="linha1">
+            <div class="escrita-coluna1">Desenvolvimento de site</div>
+            <div class="escrita-coluna2-green">R$ 12.000,00</div>
+            <div class="escrita-coluna3">Venda</div>
+            <div class="escrita-coluna4">13/04/2022</div>
+        </div>
+       
+            <div class="linha2">
+                <div class="escrita-coluna1">Hamburguer</div>
+                <div class="escrita-coluna2-red">-R$ 59,00</div>
+                <div class="escrita-coluna3">Alimentação</div>
+                <div class="escrita-coluna4">10/04/2022</div>
+            </div>
+            
+                    <div class="linha3">
+                        <div class="escrita-coluna1">Aluguel do apartamento</div>
+                        <div class="escrita-coluna2-red">-R$ 1.200,00</div>
+                        <div class="escrita-coluna3">Casa</div>
+                        <div class="escrita-coluna4">27/03/2022</div>
+                    </div>
+                        <div class="linha4">
+                            <div class="escrita-coluna1">Computador</div>
+                            <div class="escrita-coluna2-green">R$ 5.400,00</div>
+                            <div class="escrita-coluna3">Venda</div>
+                            <div class="escrita-coluna4">15/03/2022</div>
+                        </div>
+                        <div class="linha5">
+                            <div class="escrita-coluna1">Desenvolvimento de site</div>
+                            <div class="escrita-coluna2-green">R$ 8.000,00</div>
+                            <div class="escrita-coluna3">Venda</div>
+                            <div class="escrita-coluna4">13/03/2022</div>
+                        </div>
+                    <div class="linha6">
+                        <div class="escrita-coluna1">Janta</div>
+                        <div class="escrita-coluna2-red">-R$ 39,00</div>
+                        <div class="escrita-coluna3">Alimentação</div>
+                        <div class="escrita-coluna4">10/03/2022</div>
+                    </div>
+                <div class="linha7">
+                        <div class="escrita-coluna1">Aluguel do apartamento</div>
+                        <div class="escrita-coluna2-red">-R$ 1.200,00</div>
+                        <div class="escrita-coluna3">Casa</div>
+                        <div class="escrita-coluna4">27/02/2022</div>
+                </div>
+                    <div class="linha8">
+                        <div class="escrita-coluna1">Salário</div>
+                        <div class="escrita-coluna2-green"> R$ 5.400,00</div>
+                        <div class="escrita-coluna3">Salário</div>
+                        <div class="escrita-coluna4">15/02/2022</div>
+            </div>
+                    <div class="linha9">
+                        <div class="escrita-coluna1">Almoço</div>
+                        <div class="escrita-coluna2-red">-R$ 30,00</div>
+                        <div class="escrita-coluna3">Alimentação</div>
+                        <div class="escrita-coluna4">05/02/2022</div>
+        </div>
+
+
+                    <div class="linha10">
+                        <div class="escrita-coluna1">Fone de ouvido</div>
+                        <div class="escrita-coluna2-red">-R$ 150,00</div>
+                        <div class="escrita-coluna3">Itens</div>
+                        <div class="escrita-coluna4">02/02/2022</div>
+    </div>
 </div>
-</main>
 
 
-            <footer class="rodape-site"> <!--rodape--> <!--imagens-->
-                <img src="Imagens/rodape/seta_esquerda.png" alt="seta esquerda"> 
-                <img src="Imagens/rodape/pag1.png" alt="pagina 1">
-                <img src="Imagens/rodape/pag2.png" alt="pagina 2">
-                <img src="Imagens/rodape/pag3.png" alt="pagina 3">
-                <img src="Imagens/rodape/seta_direita.png" alt="seta direita">
+
+
+            <footer>
+                
+               <button class="botao-seta-esquerda"><img src="Imagens/rodape/seta_esquerda.png" alt=""></button>
+               <button class="botao-pag1">1</button>
+               <button class="botao-pag2">2</button>
+               <button class="botao-pag3">3</button>
+               <button class="botao-seta-direita"><img src="Imagens/rodape/seta_direita.png" alt=""></button>
+
+                
             </footer>
-
-        </body>
+            
+     
           
 </body>
 </html>
